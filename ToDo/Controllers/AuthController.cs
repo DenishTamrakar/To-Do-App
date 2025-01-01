@@ -4,7 +4,8 @@ namespace ToDo.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class AuthController : Controller{
+public class AuthController : ControllerBase
+{
     private readonly TokenService _tokenservice;
 
     public AuthController(TokenService tokenService){

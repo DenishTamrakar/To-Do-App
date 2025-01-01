@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
+namespace ToDo.Models;
 public class TODO{
     [Key]
     public int TDID{get; set;}
