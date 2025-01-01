@@ -1,4 +1,8 @@
+using Microsoft.EntityFrameworkCore;
 
-public class AppDBContext : DbContext{
-    
+namespace ToDo.Data{
+    public class AppDbContext : DbContext{
+        public AppDbContext(DbContextOptions<AppDbContext> options): base(options){}
+        public DbSet<TODO> ToDos {get; set;}
+    }
 }

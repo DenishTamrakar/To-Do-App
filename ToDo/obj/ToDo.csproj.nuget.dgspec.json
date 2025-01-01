@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ToDo\\TOdo\\ToDo.csproj": {}
+    "D:\\ToDo\\todo\\ToDo.csproj": {}
   },
   "projects": {
-    "D:\\ToDo\\TOdo\\ToDo.csproj": {
+    "D:\\ToDo\\todo\\ToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ToDo\\TOdo\\ToDo.csproj",
+        "projectUniqueName": "D:\\ToDo\\todo\\ToDo.csproj",
         "projectName": "ToDo",
-        "projectPath": "D:\\ToDo\\TOdo\\ToDo.csproj",
+        "projectPath": "D:\\ToDo\\todo\\ToDo.csproj",
         "packagesPath": "C:\\Users\\sasuk\\.nuget\\packages\\",
-        "outputPath": "D:\\ToDo\\TOdo\\obj\\",
+        "outputPath": "D:\\ToDo\\todo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sasuk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -50,6 +50,12 @@
               "version": "[8.0.3, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.0, )"
             },
