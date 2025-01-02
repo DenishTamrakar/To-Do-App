@@ -20,13 +20,7 @@ public class ToDosController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
-        var userIDClaim = User.FindFirst(ClaimTypes.NameIdentifier);
-        if (userIDClaim == null)
-        {
-            return Unauthorized("User not authenticated");
-        }
-        var userID = int.Parse(userIDClaim.Value);
-
+        var userID = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
         var todos = await _context.ToDos.Where(t => t.UserID == userID).ToListAsync();
         return Ok(todos);
     }
@@ -34,16 +28,9 @@ public class ToDosController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] TODO todo)
     {
-        var userIDClaim = User.FindFirst(ClaimTypes.NameIdentifier);
-        if (userIDClaim == null)
-        {
-            return Unauthorized("User not authenticated");
-        }
-
-        todo.UserID = int.Parse(userIDClaim.Value);
-        _context.Add(todo);
+        todo.UserID = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+        _context.ToDos.Add(todo);
         await _context.SaveChangesAsync();
-
         return CreatedAtAction(nameof(GetAll), new { id = todo.TDID }, todo);
     }
 
@@ -52,9 +39,7 @@ public class ToDosController : ControllerBase
     {
         var todo = await _context.ToDos.FindAsync(id);
         if (todo == null || todo.UserID != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value))
-        {
             return NotFound();
-        }
 
         todo.TDName = updatedtodo.TDName;
         todo.TDStatus = updatedtodo.TDStatus;
@@ -67,9 +52,7 @@ public class ToDosController : ControllerBase
     {
         var todo = await _context.ToDos.FindAsync(id);
         if (todo == null || todo.UserID != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value))
-        {
             return NotFound();
-        }
 
         _context.ToDos.Remove(todo);
         await _context.SaveChangesAsync();
