@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.IdentityModel.Tokens;
 
 public class TokenService{
-    private readonly string _secretKey = "yoursecretkey";
+    private readonly string _secretKey = "your256bitlongsecretkeyyour256bitlongsecretkey";
 
     public string GenerateToken(string username){
         var claims = new[]{

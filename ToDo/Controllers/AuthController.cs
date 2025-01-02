@@ -18,6 +18,6 @@ public class AuthController : ControllerBase
             var token = _tokenservice.GenerateToken(login.Username);
             return Ok(new {Token = token});
         }
-        return Unauthorized();
+        return Unauthorized("");
     }
 }
