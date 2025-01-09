@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UC9PiMA70bE=",
+  "dgSpecHash": "UCdMA3XXZ9M=",
   "success": true,
-  "projectFilePath": "D:\\ToDo\\todo\\ToDo.csproj",
+  "projectFilePath": "D:\\ToDo\\ToDo\\ToDo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sasuk\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\sasuk\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

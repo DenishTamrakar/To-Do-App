@@ -157,3 +157,4 @@ D:\ToDo\todo\obj\Debug\net9.0\ToDo.pdb
 D:\ToDo\todo\obj\Debug\net9.0\ToDo.genruntimeconfig.cache
 D:\ToDo\todo\obj\Debug\net9.0\ref\ToDo.dll
 D:\ToDo\todo\bin\Debug\net9.0\BCrypt.Net-Next.dll
+D:\ToDo\todo\obj\Debug\net9.0\ToDo.sourcelink.json

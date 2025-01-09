@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ToDo\\todo\\ToDo.csproj": {}
+    "D:\\ToDo\\ToDo\\ToDo.csproj": {}
   },
   "projects": {
-    "D:\\ToDo\\todo\\ToDo.csproj": {
+    "D:\\ToDo\\ToDo\\ToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ToDo\\todo\\ToDo.csproj",
+        "projectUniqueName": "D:\\ToDo\\ToDo\\ToDo.csproj",
         "projectName": "ToDo",
-        "projectPath": "D:\\ToDo\\todo\\ToDo.csproj",
+        "projectPath": "D:\\ToDo\\ToDo\\ToDo.csproj",
         "packagesPath": "C:\\Users\\sasuk\\.nuget\\packages\\",
-        "outputPath": "D:\\ToDo\\todo\\obj\\",
+        "outputPath": "D:\\ToDo\\ToDo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sasuk\\AppData\\Roaming\\NuGet\\NuGet.Config",

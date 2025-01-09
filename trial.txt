@@ -1,2 +1,4 @@
 dotnet ef migrations add InitialCreate
 dotnet ef database update
+
+npm create vite@4.1.0
